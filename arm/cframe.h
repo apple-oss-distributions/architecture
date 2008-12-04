@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1999-2004 Apple Computer, Inc. All rights reserved.
+ * Copyright (c) 1999-2004, 2008 Apple Inc. All rights reserved.
  *
  * @APPLE_LICENSE_HEADER_START@
  * 
@@ -37,8 +37,8 @@
  *	Created.
  */
 
-#ifndef	_ARCH_PPC_CFRAME_H_
-#define	_ARCH_PPC_CFRAME_H_
+#ifndef	_ARCH_ARM_CFRAME_H_
+#define	_ARCH_ARM_CFRAME_H_
 
 /* Note that these values are copies of the somewhat more authoritative
  * values in <architecture/ppc/mode_independent_asm.h>.  We do not
@@ -49,7 +49,7 @@
  * Most legacy uses of it are assuming it is the minimum stack frame
  * size, which is what we define it to be.
  */
-#if defined (__ppc64__)
+#if defined (__LP64__)
 #define	C_ARGSAVE_LEN	64      /* "minimum arg save area" (but see above) */
 #define	C_STACK_ALIGN	32      /* stack must be 32 byte aligned */
 #define	C_RED_ZONE      320     /* 320 bytes to skip over saved registers */
@@ -59,4 +59,4 @@
 #define	C_RED_ZONE      224     /* 224 bytes to skip over saved registers */
 #endif
 
-#endif	/* _ARCH_PPC_CFRAME_H_ */
+#endif	/* _ARCH_ARM_CFRAME_H_ */

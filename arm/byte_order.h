@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1999 Apple Computer, Inc. All rights reserved.
+ * Copyright (c) 2008 Apple Inc. All rights reserved.
  *
  * @APPLE_LICENSE_HEADER_START@
  * 
@@ -21,39 +21,12 @@
  * @APPLE_LICENSE_HEADER_END@
  */
 /*
- * Copyright (c) 1996 NeXT Software, Inc.
- */
-/* 
- * Mach Operating System
- * Copyright (c) 1989 Carnegie-Mellon University
- * Copyright (c) 1988 Carnegie-Mellon University
- * All rights reserved.  The CMU software License Agreement specifies
- * the terms and conditions for use and redistribution.
- *
- *	File:	architecture/ppc/macro_help.h
- *
- *	Provide help in making lint-free macro routines
- *
- * HISTORY
- *
- *	29-Dec-96  Umesh Vaishampayan  (umeshv@NeXT.com)
- *		Created from m98k version. 
+ * Copyright (c) 2007 Apple Computer, Inc. All rights reserved.
  */
 
-#ifndef	_ARCH_PPC_MACRO_HELP_H_
-#define	_ARCH_PPC_MACRO_HELP_H_
+#ifndef _ARCH_ARM_BYTE_ORDER_H_
+#define _ARCH_ARM_BYTE_ORDER_H_
 
-#ifndef	MACRO_BEGIN
-# define		MACRO_BEGIN	do {
-#endif	/* MACRO_BEGIN */
+#include <architecture/byte_order.h>
 
-#ifndef	MACRO_END
-# define		MACRO_END	} while (0)
-#endif	/* MACRO_END */
-
-#ifndef	MACRO_RETURN
-# define		MACRO_RETURN	if (1) return
-#endif	/* MACRO_RETURN */
-
-#endif	/* _ARCH_PPC_MACRO_HELP_H_ */
-
+#endif /* _ARCH_ARM_BYTE_ORDER_H_ */
